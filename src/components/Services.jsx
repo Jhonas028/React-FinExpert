@@ -1,6 +1,6 @@
 import React from 'react'
 import { FileText, TrendingUp, ShieldCheck } from 'lucide-react'
-import data from '../services_data.json'
+import data from '../json/services_data.json'
 
 const iconMap = {
   FileText: <FileText size={24} className="text-primary" />,

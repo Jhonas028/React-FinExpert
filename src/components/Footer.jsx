@@ -1,6 +1,6 @@
 import React from 'react'
 import { Calculator } from 'lucide-react'
-import data from '../footer_data.json'
+import data from '../json/footer_data.json'
 
 const Footer = () => {
   const { description, columns, copyright } = data

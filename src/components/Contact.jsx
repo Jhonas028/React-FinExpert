@@ -1,6 +1,6 @@
 import React from 'react'
 import { Phone, Mail, MapPin } from 'lucide-react'
-import data from '../contact_data.json'
+import data from '../json/contact_data.json'
 
 const iconMap = {
   Phone: Phone,

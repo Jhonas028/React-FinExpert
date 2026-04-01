@@ -1,6 +1,6 @@
 import React from 'react'
 import { CircleCheck } from 'lucide-react'
-import data from '../pricing_data.json'
+import data from '../json/pricing_data.json'
 
 const Pricing = () => {
   const { title, subtitle, plans } = data

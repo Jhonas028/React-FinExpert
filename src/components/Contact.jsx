@@ -26,7 +26,7 @@ const Contact = () => {
                 const Icon = iconMap[contact.icon]
                 return (
                   <li key={contact.id} className="flex items-start gap-4">
-                    <div className="bg-surface-muted p-3 rounded-xl">
+                    <div className="bg-surface-muted p-3 rounded-xl border border-primary/20 bg-accent/50">
                       <Icon size={18} className="text-primary" />
                     </div>
                     <div>

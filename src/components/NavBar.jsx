@@ -68,17 +68,17 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden px-4 pb-4 bg-primary">
-            <ul className="flex flex-col gap-4 py-8">
-              <li><a href="#Services" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Services</a></li>
-              <li><a href="#About" className="text-white hover:text-accent" onClick={() => setOpen(false)}>About</a></li>
-              <li><a href="#Pricing" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Pricing</a></li>
-              <li><a href="#Contact" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Contact</a></li>
-              <li><a href="#Hero" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Get Started</a></li>
-            </ul>
-          </div>
-        )}
+        <div className={`md:hidden px-4 overflow-hidden transition-all duration-300 ease-in-out bg-primary ${
+          isOpen ? 'max-h-96 pb-4 opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <ul className="flex flex-col gap-4 py-8">
+            <li><a href="#Services" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Services</a></li>
+            <li><a href="#About" className="text-white hover:text-accent" onClick={() => setOpen(false)}>About</a></li>
+            <li><a href="#Pricing" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Pricing</a></li>
+            <li><a href="#Contact" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Contact</a></li>
+            <li><a href="#Hero" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Get Started</a></li>
+          </ul>
+        </div>
       </nav>
 
       {/* Backdrop overlay */}

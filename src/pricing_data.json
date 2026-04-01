@@ -1,0 +1,47 @@
+{
+  "title": "Simple, Transparent Pricing",
+  "subtitle": "No hidden fees. Choose a plan that fits your business size.",
+  "plans": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "price": "$199",
+      "period": "/month",
+      "popular": false,
+      "features": [
+        "Monthly Bookkeeping",
+        "Annual Tax Filing",
+        "Email Support",
+        "Basic Reports"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Business",
+      "price": "$499",
+      "period": "/month",
+      "popular": true,
+      "features": [
+        "Weekly Bookkeeping",
+        "Quarterly Tax Strategy",
+        "Priority Phone Support",
+        "CFO Dashboard",
+        "Payroll Management"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "popular": false,
+      "features": [
+        "Dedicated Accounting Team",
+        "Daily Reconciliation",
+        "Audit Representation",
+        "Financial Forecasting",
+        "Custom Integrations"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Why Partner With FinExpert?",
+  "description": "We believe in proactive accounting. Instead of just reporting what happened, we help you plan for what's next. Our team of CPAs and financial advisors are dedicated to your success.",
+  "features": [
+    "Certified Public Accountants",
+    "24/7 Online Portal Access",
+    "Dedicated Account Manager",
+    "Transparent Flat-Fee Pricing"
+  ],
+  "stats": [
+    { "id": 1, "value": "15+", "label": "Years Experience", "color": "text-blue-400" },
+    { "id": 2, "value": "$2M+", "label": "Taxes Saved", "color": "text-green-400" },
+    { "id": 3, "value": "500+", "label": "Clients Served", "color": "text-purple-400" },
+    { "id": 4, "value": "100%", "label": "Commitment", "color": "text-orange-400" }
+  ]
+}

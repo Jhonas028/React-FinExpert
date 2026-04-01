@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3452c8;
+  --color-logo_color: #3452c8;
+  --color-primary-light: #4a6ad4;
+  --color-primary-dark: #2a3fa0;
+  --color-dark-section: #1a1f3c;
+  --color-accent: #60a5fa;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+
+  body {
+    @apply overflow-x-hidden font-sans text-slate-800 text-base bg-white;
+  }
+
+  .container {
+    @apply max-w-6xl w-full mx-auto px-4;
+  }
+
+  h1 { @apply text-[clamp(2rem,6vw,3rem)] font-bold leading-tight; }
+  h2 { @apply text-[clamp(1.5rem,5vw,2.5rem)] font-bold leading-snug; }
+  h3 { @apply text-[clamp(1.25rem,4vw,1.5rem)] font-semibold; }
+  h4 { @apply text-[clamp(1rem,3vw,1.25rem)] font-semibold; }
+  h5 { @apply text-lg font-semibold; }
+  h6 { @apply text-base font-medium; }
+
+  p  { @apply text-sm leading-relaxed text-slate-500; }
+  a  { @apply text-sm; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-lg font-medium
+    w-full text-center md:w-auto cursor-pointer;
+  }
+  .btn--primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+  .btn--outline {
+    @apply border border-white text-white hover:bg-white hover:text-primary;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-md;
+  }
+  .card h3 {
+    @apply text-primary mb-2;
+  }
+  .card p {
+    @apply mb-4;
+  }
+  .card a {
+    @apply text-primary font-medium hover:text-primary-dark;
+  }
+
+  /* Footer */
+  footer h5 {
+    @apply mb-4 text-white;
+  }
+  .footer-link {
+    @apply space-y-2;
+  }
+  .footer-link li {
+    @apply text-white/60 hover:text-white cursor-pointer;
+  }
+}

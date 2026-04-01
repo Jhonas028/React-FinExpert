@@ -1,0 +1,21 @@
+{
+  "description": "Professional accounting services you can trust. Helping businesses grow since 2008.",
+  "columns": [
+    {
+      "id": 1,
+      "heading": "Services",
+      "links": ["Tax Planning", "Bookkeeping", "Audit Support", "Payroll"]
+    },
+    {
+      "id": 2,
+      "heading": "Company",
+      "links": ["About Us", "Careers", "Blog", "Contact"]
+    },
+    {
+      "id": 3,
+      "heading": "Legal",
+      "links": ["Privacy Policy", "Terms of Service", "Cookie Policy"]
+    }
+  ],
+  "copyright": "© 2026 FinExpert Accounting. All rights reserved."
+}

@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "icon": "FileText",
+      "title": "Tax Preparation",
+      "description": "Strategic tax planning and preparation to maximize your returns and ensure compliance.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "icon": "TrendingUp",
+      "title": "Financial Analysis",
+      "description": "In-depth reporting and forecasting to help you make informed business decisions.",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "icon": "ShieldCheck",
+      "title": "Audit Defense",
+      "description": "Expert representation and support during IRS audits and financial reviews.",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Let's Discuss Your Finances",
+  "subtitle": "Ready to take the first step towards financial clarity? Fill out the form and our team will reach out within 24 hours.",
+  "contacts": [
+    {
+      "id": 1,
+      "icon": "Phone",
+      "label": "Phone",
+      "value": "+1 (555) 123-4567"
+    },
+    {
+      "id": 2,
+      "icon": "Mail",
+      "label": "Email",
+      "value": "contact@finexpert.com"
+    },
+    {
+      "id": 3,
+      "icon": "MapPin",
+      "label": "Office",
+      "value": "100 Financial District, Suite 400\nNew York, NY 10005"
+    }
+  ],
+  "services": [
+    "Tax Preparation",
+    "Financial Analysis",
+    "Audit Defense",
+    "CFO Services",
+    "Payroll Management"
+  ]
+}

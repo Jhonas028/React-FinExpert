@@ -10,7 +10,7 @@ const NavBar = () => {
       setScrolled(window.scrollY > 10)
     }
 
-    handleScroll() // ✅ check on mount
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -37,7 +37,7 @@ const NavBar = () => {
             {['Services', 'About', 'Pricing', 'Contact'].map((item) => (
               <li key={item}>
                 
-               <a     href={`#${item}`}
+                <a  href={`#${item}`}
                   className={`text-sm font-medium transition-colors duration-300 ${
                     scrolled ? 'text-slate-700 hover:text-primary' : 'text-white hover:text-accent'
                   }`}
@@ -45,8 +45,14 @@ const NavBar = () => {
               </li>
             ))}
             <li>
-              <a href="#Hero" className="border border-primary text-sm px-4 py-2 rounded-lg bg-white
-               hover:bg-primary hover:text-white transition-all duration-300">
+              <a
+                href="#Hero"
+                className={`text-sm px-4 py-2 rounded-lg border transition-all duration-300 ${
+                  scrolled
+                    ? 'border-primary text-primary hover:bg-primary hover:text-white'
+                    : 'border-white text-white bg-transparent hover:bg-white hover:text-primary'
+                }`}
+              >
                 Get Started
               </a>
             </li>
@@ -63,17 +69,25 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className={`md:hidden px-4 pb-4 ${scrolled ? 'bg-primary' : 'bg-primary'}`}>
+          <div className="md:hidden px-4 pb-4 bg-primary">
             <ul className="flex flex-col gap-4 py-8">
-              <li><a href="#Services" className="text-white hover:text-white">Services</a></li>
-              <li><a href="#About" className="text-white hover:text-white">About</a></li>
-              <li><a href="#Pricing" className="text-white hover:text-white">Pricing</a></li>
-              <li><a href="#Contact" className="text-white hover:text-white">Contact</a></li>
-              <li><a href="#Hero" className="text-white hover:text-white">Get Started</a></li>
+              <li><a href="#Services" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Services</a></li>
+              <li><a href="#About" className="text-white hover:text-accent" onClick={() => setOpen(false)}>About</a></li>
+              <li><a href="#Pricing" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Pricing</a></li>
+              <li><a href="#Contact" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Contact</a></li>
+              <li><a href="#Hero" className="text-white hover:text-accent" onClick={() => setOpen(false)}>Get Started</a></li>
             </ul>
           </div>
         )}
       </nav>
+
+      {/* Backdrop overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-white/10 backdrop-blur-sm z-40 md:hidden top-70"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </>
   )
 }
